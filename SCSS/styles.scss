@@ -1,0 +1,16 @@
+html body{
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    margin: 0;
+}
+
+
+@import "./header";
+@import "./navbar";
+@import "./icon-shop-cart";
+@import "./index-imgs";
+@import "./footer";
+@import "./contact";
+@import "./catalogue";
+@import "./product-details";
+@import "./shop-cart";
+@import "./media-queries";

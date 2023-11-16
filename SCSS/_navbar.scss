@@ -1,0 +1,55 @@
+
+.bs-navbar {
+    background-color: #da85b6;
+    font-family: Exo;
+    font-size: 1em;
+
+    a {
+        transition: ease-in-out 0.2s;
+    
+        &:hover {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.menu {
+    background-color: #fc579c;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 500px;
+    }
+
+    li {
+        display: flex;
+       
+        margin: 0 10px 0 0;
+        font-family: Exo;
+        font-size: 20px;
+
+        a {
+            padding: 2px 7px 2px 7px;
+            color: #666;
+            background-color: #eeeeee;
+            border: 2px solid #6b428d;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: ease-in-out 0.2s;
+            
+            &:hover {
+                background-color: #ff6bb0;
+                color: #ffffff;
+                font-size: 23px;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .banner {
+        width: 100%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+    .menu {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .menu ul {
+        width: 300px;
+    }
+    .menu li {
+        margin: 0 8px 0 0;
+        font-size: 15px;
+    }
+    .menu li a {
+        padding: 1px 6px 1px 6px;
+        border: 1px solid #6b428d;
+        border-radius: 6px;    
+    }
+    .menu li a:hover {
+        font-size: 17px;
+    }
+    .prod_img:hover {
+        height: 320px;
+        margin: 20px;
+        border: 2px solid #c95197;
+    }
+    .product_details {
+        max-width: 95%;
+        border-radius: 5px;
+        border: 1px solid $color-element;
+
+        .detalles {
+            fieldset {
+                border: 1px solid #6b428d;
+                margin: 7px;
+
+                legend {
+                    font-size: 1em;
+                    font-weight: 400;
+                    margin: 2px 2px;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+    
+}
