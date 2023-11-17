@@ -1,6 +1,8 @@
+@import "./vars";
+
 .contacto {
     font-family: Lora;
-    background-color: #ffd4e6;
+    background: linear-gradient(-45deg, #f084e5 0%, #aca7eb 100%);
     max-width: 900px;
     margin-left: 30px;
     border-radius: 19px;
@@ -10,12 +12,18 @@
 
     h2 {
         margin-bottom: 1px;
+        background-color: #f084e5;
+        color: $color-text;
+        font-size: 1.8rem;
     }
     h3 {
         margin-top: 2px;
         font-family: Exo;
         font-weight: 400;
-        color: #666;
+        color: $color-text;
+        background-color: #f084e5;
+        font-size: 1.5rem;
+
     }
 }
 
@@ -23,7 +31,7 @@
     margin: auto;
     font-family: Exo;
     font-weight: 400;
-    background-color: #f68084;
+    background: linear-gradient(45deg, #f36be5 0%, #827dca 100%);
     width: 90%;
     max-width: 700px;
     border-radius: 19px;
@@ -43,7 +51,7 @@
         border-radius: 6px;
         outline: none;
         border: none;
-        border: 1px solid #bbb0b0;
+        border: 1px solid #dbb0b0;
 
         &_message {
             resize: none;
@@ -56,18 +64,18 @@
         max-width: 70%;
         font-family: inherit;
         font-size: 1rem;
-        background-color: #6b428d;
+        background-color: $color-button;
         color: white;
         border: none;
         border-radius: 13px;
         font-weight: 500;
         padding: .7em 0;
         cursor: pointer;
-
+        transition: ease-in-out 0.15s;
         &:hover {
-            font-size: 1.2rem;
             font-weight: bold;
-            background-color: #b42b6b;
+            background-color: #f3bbcc;
+            color: $color-text;
         }
     }
 }

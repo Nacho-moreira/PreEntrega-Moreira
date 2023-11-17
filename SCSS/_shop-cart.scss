@@ -1,24 +1,24 @@
+@import "./vars";
 .carrito {
-    background-color: #a6c0fe;
-    margin: 20px 10px;
+    background-color: $color-base;
+    margin: 20px auto;
     border-radius: 1em;
 
     &_titulo {
-        margin: 3px 400px;
         font-family: Lora;
         font-size: 1.5em;
         font-weight: 700;
-        color: #353535;
-        box-shadow: 2px 4px 10px #cf579d;
+        color: $color-text;
+        box-shadow: inset 0px 0px 2px 2px #a7457e;
         text-align: center;
-        background-color: #7dc1ee;
-        border-radius: 1em;
-        padding: 2px;
+        background-color: $color-element;
+        border-radius: 0.7em;
+        padding: 1px;
     }
     &_lista {
-        background-color: #e9a8ce;
-        margin: 20px 20px;
-        border-radius: 1em;
+        background-color: $color-element;
+        margin: 10px 0 10px 0;
+        border-radius: 0.7em;
 
         ul {
             list-style: none;
@@ -26,8 +26,8 @@
     }
 
     &_producto {
-        background-color: #c95197;
-        border: 2px solid #6b428d;
+        background-color: #ec94c7;
+        border: 2px solid $color-button;
         margin: 20px 5px;
         border-radius: 1em;
         font-family: Exo;
@@ -35,7 +35,7 @@
         max-width: 600px;
 
         img {
-            max-width: 250px;
+            max-width: 200px;
             border-radius: 1em;
             box-shadow: 2px 2px 6px #6b428d;
         }
@@ -50,7 +50,7 @@
         }
 
         &_nombre {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 2px;
             text-shadow: 1px 1px 2px #eed0dc;
         }
@@ -58,12 +58,12 @@
 }
 
 .finalizar_compra {
-    background-color: #25d366;
-    border: 3px solid #126430;
-    max-width: 120px;
+    background-color: $color-button;
+    border: 3px solid #d3b1bb;
+    max-width: 130px;
     margin: auto;
-    border-radius: 2em;
-    padding: 6px;
+    border-radius: 1em;
+    padding: 2px;
     box-shadow: 3px 3px 3px #6b428d;
 
     a {
@@ -73,19 +73,20 @@
         font-style: italic;
         font-weight: 700;
         color: #ffffff;
-        text-shadow: 1px 1px 2px #126430;
-        font-size: 19px;
-        
+        transition: ease-in-out 0.2s;
+        h4 {
+            font-size: 20px;
+        }        
         &:hover {
             font-size: 20px;
-            color: #7dc1ee;
-            text-shadow: 1px 1px 2px #25d366;
+            color: $color-text;
+            text-shadow: 1px 1px 2px 5px #e99bb2;
         
         }
     }
     
     &:hover {
-        background-color: #126430;
-        border: 3px solid #25d366;
+        background-color: #e9a4b8;
+        border: 3px solid #8b1973;
     }
 }
