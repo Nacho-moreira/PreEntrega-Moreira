@@ -1,24 +1,26 @@
 @import "./vars";
+@import "./mixins";
+
 .carrito {
     background-color: $color-base;
     margin: 20px auto;
-    border-radius: 1em;
+    @include bord-c-r;
 
     &_titulo {
         font-family: Lora;
         font-size: 1.5em;
         font-weight: 700;
         color: $color-text;
-        box-shadow: inset 0px 0px 2px 2px #a7457e;
+        box-shadow: inset 0px 0px 2px 2px #ac5b8a;
         text-align: center;
         background-color: $color-element;
-        border-radius: 0.7em;
+        @include bord-c-r;
         padding: 1px;
     }
     &_lista {
         background-color: $color-element;
         margin: 10px 0 10px 0;
-        border-radius: 0.7em;
+        @include bord-c-r;
 
         ul {
             list-style: none;
@@ -27,16 +29,15 @@
 
     &_producto {
         background-color: #ec94c7;
-        border: 2px solid $color-button;
+        @include bord-c-r;
         margin: 20px 5px;
-        border-radius: 1em;
         font-family: Exo;
         font-weight: 400;
         max-width: 600px;
 
         img {
             max-width: 200px;
-            border-radius: 1em;
+            @include bord-c-r;
             box-shadow: 2px 2px 6px #6b428d;
         }
 
@@ -46,7 +47,7 @@
             font-weight: 600;
             margin-bottom: 20px;
             background-color: #e9a8ce;
-            border-radius: 1em;
+            @include bord-c-r;
         }
 
         &_nombre {
@@ -59,10 +60,9 @@
 
 .finalizar_compra {
     background-color: $color-button;
-    border: 3px solid #d3b1bb;
+    @include bord-c-r;
     max-width: 130px;
     margin: auto;
-    border-radius: 1em;
     padding: 2px;
     box-shadow: 3px 3px 3px #6b428d;
 

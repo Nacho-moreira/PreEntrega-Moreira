@@ -1,18 +1,18 @@
 @import "./vars";
+@import "./mixins";
 
 .product_details {
     background-color: $color-base;
     font-family: Exo;
     max-width: 85%;
-    border-radius: 20px;
-    border: 2px solid $color-element;
+    @include bord-c-r;
+
     h2{
-        float:none;
         font-size: 20px;
         font-weight: 700;
-        margin-bottom: 1px;
-        margin-left: 10px;
+        margin: 10px auto 15px auto;
     }
+    
     .detalles {
         min-height:max-content;
         .img_container {
@@ -26,10 +26,10 @@
         fieldset {
             margin-top: 30px;
             background-color: $color-element;
-            border: 2px solid #6b428d;
-            border-radius: 1.5em;
+            @include bord-c-r;
             max-width: 70%;
-            margin: 10px;
+            margin: 7px;
+
             legend {
                 background-color: $color-emphasis;
                 color: $color-text;
@@ -37,7 +37,7 @@
                 font-size: 1.3em;
                 margin: 3px 3px;
                 padding: 7px;
-                border-radius: 1.5em;
+                @include bord-c-r;
             }
             input {
                 margin-left: 20px;
@@ -50,30 +50,27 @@
         .precio {
             background-color: $color-element;
             color: $color-text;
-            border: 3px solid #6b428d;
-            border-radius: 3em;
+            @include bord-c-r;
             padding: 2px;
-            line-height: 2;
+            line-height: 2.2;
             max-width: 150px;
             margin: auto;
-            margin-top: 20px;
         
             p {
                 font-family: Lora;
-                font-size: 1.2em;
+                font-size: 1.4em;
                 font-weight: 700;
                 text-align: center;
             }
         }
+        
         .add_cart {
             background-color: $color-button;
             padding: 1em;
             max-width: 200px;
-            margin-top: 5px;
-            margin-bottom: 15px;
+            margin: 2px auto 15px auto;
             height: 50px;
-            border: 1px solid #b60c6f;
-            border-radius: 1.2em;
+            @include bord-c-r;
             line-height: 0.4;
             text-shadow: 2px 2px 5px $color-emphasis;
             transition: ease-in-out 0.3s;

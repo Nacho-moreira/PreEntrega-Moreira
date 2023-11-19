@@ -1,14 +1,18 @@
+@import "./mixins";
+@import "./vars";
 
 .bs-navbar {
     background-color: #da85b6;
     font-family: Exo;
     font-size: 1em;
+    @include bord-c-r;
 
     a {
         transition: ease-in-out 0.2s;
     
         &:hover {
-            font-size: 1.3em;
+            font-size: 1.2em;
+            color: #ffffff;
         }
     }
 }
@@ -17,21 +21,18 @@
     background-color: #fc579c;
     margin-left: 15%;
     margin-right: 15%;
-    display: flex;
-    justify-content: center;
+    @include d-flex-center;
     border-radius: 9px;
 
     ul {
         list-style-type: none;
-        display: flex;
+        @include d-flex-center;
         flex-flow: row wrap;
-        justify-content: center;
         width: 500px;
     }
 
     li {
         display: flex;
-       
         margin: 0 10px 0 0;
         font-family: Exo;
         font-size: 20px;
@@ -41,14 +42,14 @@
             color: #666;
             background-color: #eeeeee;
             border: 2px solid #6b428d;
-            border-radius: 6px;
+            border-radius: 10px;
             text-decoration: none;
             transition: ease-in-out 0.2s;
             
             &:hover {
                 background-color: #ff6bb0;
                 color: #ffffff;
-                font-size: 23px;
+                font-size: 21px;
             }
         }
     }

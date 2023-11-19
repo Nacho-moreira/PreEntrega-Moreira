@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./vars";
 
 .contacto {
@@ -5,7 +6,7 @@
     background: linear-gradient(-45deg, #f084e5 0%, #aca7eb 100%);
     max-width: 900px;
     margin-left: 30px;
-    border-radius: 19px;
+    @include bord-c-r;
     padding: 20px;
     text-align: left;
     margin: auto;
@@ -23,7 +24,6 @@
         color: $color-text;
         background-color: #f084e5;
         font-size: 1.5rem;
-
     }
 }
 
@@ -34,7 +34,7 @@
     background: linear-gradient(45deg, #f36be5 0%, #827dca 100%);
     width: 90%;
     max-width: 700px;
-    border-radius: 19px;
+    @include bord-c-r;
     padding: 35px;
 
     &_container {
@@ -48,15 +48,20 @@
     &_input {
         font-family: inherit;
         padding: .8em 1.2em;
-        border-radius: 6px;
+        @include bord-c-r;
         outline: none;
         border: none;
-        border: 1px solid #dbb0b0;
+        transition: ease-in-out 0.2s;
 
         &_message {
             resize: none;
             padding: 1.8em 1em;
             margin-bottom: 1.5em;
+        }
+        &:focus {
+            background-color: #d7d4ff;
+            border-radius: 5px;
+            border: 2px solid #ca7db9;
         }
     }
 
@@ -66,12 +71,13 @@
         font-size: 1rem;
         background-color: $color-button;
         color: white;
+        @include bord-c-r;
         border: none;
-        border-radius: 13px;
         font-weight: 500;
         padding: .7em 0;
         cursor: pointer;
         transition: ease-in-out 0.15s;
+        
         &:hover {
             font-weight: bold;
             background-color: #f3bbcc;
