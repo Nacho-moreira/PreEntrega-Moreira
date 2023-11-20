@@ -3,6 +3,14 @@ html body {
   margin: 0;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 header {
   display: flex;
   justify-content: center;
@@ -23,6 +31,14 @@ header h1 {
   width: 100%;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .bs-navbar {
   background-color: #da85b6;
   font-family: Exo;
@@ -109,6 +125,14 @@ header h1 {
   animation-duration: 0.3s;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .main_index {
   display: flex;
   justify-content: center;
@@ -153,6 +177,14 @@ header h1 {
   border: 4px solid #c95197;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 footer {
   margin-top: 10px;
 }
@@ -196,6 +228,14 @@ footer p {
   height: auto;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .contacto {
   font-family: Lora;
   background: linear-gradient(-45deg, #f084e5 0%, #aca7eb 100%);
@@ -279,6 +319,14 @@ footer p {
   color: #000000;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .catalogo {
   background-color: #fc579c;
   border: 2px solid #ffa3f0;
@@ -366,6 +414,14 @@ footer p {
   margin-left: 40px;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .product_details {
   background-color: #F084E5;
   font-family: Exo;
@@ -454,6 +510,14 @@ footer p {
   margin-bottom: 10px;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .carrito {
   background-color: #F084E5;
   margin: 20px auto;
@@ -542,6 +606,14 @@ footer p {
   border: 3px solid #8b1973;
 }
 
+@keyframes giro {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 576px) and (max-width: 768px) {
   .banner {
     width: 100%;
