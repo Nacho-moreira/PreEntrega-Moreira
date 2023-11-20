@@ -1,5 +1,6 @@
 @import "./mixins";
 @import "./vars";
+@import "./maps";
 
 .catalogo {
     background-color: #fc579c;
@@ -34,6 +35,7 @@
         display:grid;
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(2, 1fr);
+        align-items: center;
 
         ul {
             background-color: #eed0dc;
@@ -46,13 +48,21 @@
             text-align: center;
             align-content: center;
             background-color: #f5abd6;
-            margin: 9px;
+            padding: 5px;
+            margin: 5px;
             @include bord-c-r;
-        
+            transition: ease-in-out 0.3s;
+
+            &:hover {
+                margin: 1px;
+                padding: 10px;
+                background-color: #fc92d0;
+            }
+
             h2 {
                 font-family: Lora;
                 font-size: 1.2rem;
-                font-weight: lighter;
+                font-weight: map-get($map: $f-weight, $key: "simple" );
                 color: $color-text;
             }
         }   
@@ -70,9 +80,12 @@
         }
 
         &_precio {
-            color: #b60c6f;
+            color: #000000;
+            @include bord-c-r;
+            padding-left: 5px;
+            background: linear-gradient(90deg, #f5abd6 0%, #e4128c 100%);
             font-size: 1.2em;
-            font-weight: 700;
+            font-weight: map-get($map: $f-weight, $key: "important" );
             margin-left: 40px;
         }
         

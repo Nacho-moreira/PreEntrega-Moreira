@@ -3,7 +3,9 @@ html body{
     margin: 0;
 }
 
-
+@import "./vars";
+@import "./mixins";
+@import "./maps";
 @import "./header";
 @import "./navbar";
 @import "./icon-shop-cart";
